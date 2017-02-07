@@ -55,7 +55,7 @@ public class NormalPagerAdapter extends PagerAdapter {
                 break;
             case 2:
                 rv3 = (RecyclerView) view.findViewById(R.id.adapter3_recycler);
-                rv3.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+                rv3.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
                 rv3.setAdapter(new NormalRecycleAdapter1(mContext,3));
                 break;
         }

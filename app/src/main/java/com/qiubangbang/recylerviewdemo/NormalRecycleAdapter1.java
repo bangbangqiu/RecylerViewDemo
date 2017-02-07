@@ -40,8 +40,9 @@ public class NormalRecycleAdapter1 extends RecyclerView.Adapter {
         myViewHolder.textView.setText("item: " + position);
         if (mPages == 3) {
             ViewGroup.LayoutParams layoutParams = myViewHolder.relativeLayout.getLayoutParams();
-            layoutParams.height = (90 + new Random().nextInt(40)) * 3;
+            layoutParams.height = (100 + new Random().nextInt(60)) * 3;
             myViewHolder.relativeLayout.setLayoutParams(layoutParams);
+            myViewHolder.relativeLayout.setBackgroundColor(0xff887766);
         }
     }
 
